@@ -43,6 +43,18 @@
             </a>
         </div>
     </nav>
+
+
+
+    <ul id="slide-out" class="side-nav">
+      <li><a href="#!">First Sidebar Link</a></li>
+      <li><a href="#!">Second Sidebar Link</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse show-on-large waves-effect wave-light btn">Categorie</a>
+
+
+
+
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <br><br>
@@ -163,16 +175,22 @@
 
 <!--  Scripts-->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-<script src="js/app.js"></script>
-<script src="../src/angular-youtube-api-factory.js"></script>
+
+<!-- Compiled and minified JavaScript -->
+
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
-<script class"search">
-$( function() {
+<script src="js/init.js"></script>
+<script src="js/app.js"></script>
+
+<script src="../src/angular-youtube-api-factory.js"></script>
+
+
+<script>
+$(function() {
     var availableTags = [
     "ActionScript",
     "AppleScript",
