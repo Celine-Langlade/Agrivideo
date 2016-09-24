@@ -23,6 +23,9 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
         $('#video2').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[1].id.videoId);
         $('#video3').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[2].id.videoId);
         $('#video4').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[3].id.videoId);
+        $('#video5').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[4].id.videoId);
+        $('#video6').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[5].id.videoId);
+        $('#video7').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[6].id.videoId);
     });
 
     youtubeFactory.getVideosFromSearchByParams({
