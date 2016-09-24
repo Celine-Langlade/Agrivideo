@@ -21,6 +21,22 @@
   padding: 10px;
 }
 
+
+.button-collapse.show-on-large.waves-effect.wave-light.btn {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+     background-color: #feb41f;
+   }
+
+.form
+{
+       background-color: #feb41f;
+}
+
+h4{
+  text-align: center;
+}
+
 footer {
     bottom: 0px;
     width: 100%;
@@ -42,15 +58,23 @@ footer {
 #logoplay {
     size: 20px;
 }
-img {
+img.social{
   -webkit-transition: -webkit-transform .8s ease-in-out;
           transition:         transform .8s ease-in-out;
 }
-img:hover {
+img.social:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
 }
 
+img#logoplay{
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img#logoplay:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
 
 .socials {}
 
@@ -61,6 +85,11 @@ img:hover {
     vertical-align: bottom;
 }
 
+.wcs
+{
+    width: 3%;
+}
+
 .recherche {
 
   position: absolute;
@@ -68,5 +97,4 @@ img:hover {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-
 }
