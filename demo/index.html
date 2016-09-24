@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -14,159 +15,133 @@
     <nav class="light-green lighten-1" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo"><img src="play.png" id="logoplay" alt="logo"/>
-                AGRICULTURE D'AUJOURD'HUI
+                AGRICULTEUR D'AUJOURD'HUI
             </a>
             <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="#">ACCEUIL</a>
-                </li>
-                <li>
-                    <a href="#">VIDÉOS</a>
-                </li>
-                <li>
-                    <a href="#">CATEGORIES</a>
-                </li>
+                <li><a href="#">ACCEUIL</a></li>
+                <li><a href="#">VIDÉOS</a></li>
+                <li><a href="#">CATEGORIES</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
-              <li>
-                <a href="#">ACCEUIL</a>
-            </li>
-            <li>
-                <a href="#">VIDÉOS</a>
-            </li>
-            <li>
-                <a href="#">CATEGORIES</a>
-            </li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse">
-            <i class="material-icons">menu</i>
-        </a>
+              <li><a href="#">ACCEUIL</a></li>
+            <li><a href="#">VIDÉOS</a></li>
+            <li><a href="#">CATEGORIES</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <ul id="slide-out" class="side-nav">
+        <li><a href="#!">First Sidebar Link</a></li>
+        <li><a href="#!">Second Sidebar Link</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse show-on-large waves-effect wave-light btn">Categorie</a>
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center light-green-text">Bienvenue sur Agriculteur d'aujourd'hui</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">La première plateforme vidéo dédiée au monde agricole !</h5>
+            </div>
+
+        </div>
     </div>
-</nav>
-
-
-
-<ul id="slide-out" class="side-nav">
-  <li><a href="#!">First Sidebar Link</a></li>
-  <li><a href="#!">Second Sidebar Link</a></li>
-</ul>
-<a href="#" data-activates="slide-out" class="button-collapse show-on-large waves-effect wave-light btn">Categorie</a>
-
-
-
-
-<div class="section no-pad-bot" id="index-banner">
+<br/><br/><br/><br/>
     <div class="container">
-        <br><br>
-        <h1 class="header center light-green-text">Bienvenue sur Agriculteur d'aujourd'hui</h1>
-        <div class="row center">
-            <h5 class="header col s12 light">La première plateforme vidéo dédiée au monde agricole !</h5>
-        </div>
-
-    </div>
-</div>
-<div class="container">
-    <div class="section">
-
-        <!--   Icon Section   -->
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center light-green-text">
-                        <i class="material-icons">school</i>
-                    </h2>
-                    <h5 class="center">Accélérez votre apprentissage</h5>
-
-                    <p class="light center-align">Grâce à notre plateforme accédez gratuitement et simplement à toutes les ressources nécessaires pour progresser dans votre métier.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center light-green-text">
-                        <i class="material-icons">video_library</i>
-                    </h2>
-                    <h5 class="center">Une expérience facile et rapide</h5>
-
-                    <p class="light center-align">Utilisez des tags et mots-clefs pour retrouver précisément l'information recherchée.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center light-green-text">
-                        <i class="material-icons">group_add</i>
-                    </h2>
-                    <h5 class="center">Créez des liens</h5>
-
-                    <p class="light center-align">Notez, échangez, commentez ! Apprenez de la communauté Agrividéo et rencontrez les gens qui seront peut-etre vos futurs associés ou simplement vos amis !
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br>
-
-</div>
-<div class="container">
-    <div class="section recherche">
+        <div class="section recherche">
         <nav>
             <div class="nav-wrapper">
-              <form>
-                <div class="input-field orange">
-                  <div class="ui-widget">
-                      <label for="tags"><i class="material-icons">search</i></label>
-                      <input id="tags">
-                      <i class="material-icons">close</i>
-                  </div>
-              </form>
-          </div>
-      </nav>
-  </div>
-</div>
-<br/>
-<br>
-<div ng-controller="controller">
-    <div class="video">
-        <iframe id="video1" src="" width="600" height="300"></iframe>
-    </br>
-</br>
-<iframe id="video2" src="" width="600" height="300"></iframe>
-</br>
-</br>
-<iframe id="video3" src="" width="600" height="300"></iframe>
-</br>
-</br>
-<iframe id="video4" src="" width="600" height="300"></iframe>
-</div>
-</div>
-
-<footer class="page-footer light-green">
-    <div class="container">
-        <div class="row">
-            <div class="col l4 s6 about">
-                <h5 class="white-text">Agriculteur d'aujourd'hui</h5>
-                <p class="grey-text text-lighten-4">Agriculteur d'aujourd'hui est une plateforme créée par Thierry bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
-                </p>
-
+                <form>
+                    <div class="input-field orange">
+                        <div class="ui-widget">
+                            <label for="tags"><i class="material-icons">search</i></label>
+                            <input id="tags">
+                        </div>
+                </form>
             </div>
-            <div class="row">
-                <div class="col l4 s6 offset-l3 socials">
-                    <a href="mailto:" target="_blank"><img src="mail.png" alt="gmail logo"/>
-                    </a>
-                    <a href="https://www.facebook.com/agriculteurdaujourdhui/?fref=ts" target="_blank"><img src="facebook.png" alt="facebook logo"/>
-                    </a>
-                    <a href="https://twitter.com/agriculteuraujo" target="_blank"><img src="twitter.png" alt="twitter logo"/>
-                    </a>
-
-                </div>
-            </div>
-
+        </nav>
+    </div>
+<br/><br>
+    <div ng-controller="controller">
+        <div class="video">
+            <iframe id="video1" src="" width="600" height="300"></iframe>
+            </br></br>
+            <iframe id="video2" src="" width="600" height="300"></iframe>
+            </br></br>
+            <iframe id="video3" src="" width="600" height="300"></iframe>
         </div>
     </div>
-</div>
+    <div ng-controller="controller">
+        <div class="video">
+            <iframe id="video4" src="" width="600" height="300"></iframe>
+            </br></br>
+            <iframe id="video5" src="" width="600" height="300"></iframe>
+            </br></br>
+            <iframe id="video6" src="" width="600" height="300"></iframe>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-green-text">
+                            <i class="material-icons">school</i>
+                        </h2>
+                        <h5 class="center">Accélérez votre apprentissage</h5>
+
+                        <p class="light center-align">Grâce à notre plateforme accédez gratuitement et simplement à toutes les ressources nécessaires pour progresser dans votre métier.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-green-text">
+                            <i class="material-icons">video_library</i>
+                        </h2>
+                        <h5 class="center">Une expérience facile et rapide</h5>
+                        <p class="light center-align">Utilisez des tags et mots-clefs pour retrouver précisément l'information recherchée.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-green-text">
+                            <i class="material-icons">group_add</i>
+                        </h2>
+                        <h5 class="center">Créez des liens</h5>
+                        <p class="light center-align">Notez, échangez, commentez ! Apprenez de la communauté Agrividéo et rencontrez les gens qui seront peut-etre vos futurs associés ou simplement vos amis !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+    </div>
+
+    <footer class="page-footer light-green">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s6 about">
+                    <h5 class="white-text">Agriculteur d'aujourd'hui</h5>
+                    <p class="grey-text text-lighten-4">Agriculteur d'aujourd'hui est une plateforme créée par Thierry bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</p>
+                </div>
+                <div class="row">
+                    <div class="col l4 s6 offset-l3 socials">
+                        <a href="mailto:" target="_blank"><img src="mail.png" alt="gmail logo"/></a>
+                        <a href="https://www.facebook.com/agriculteurdaujourdhui/?fref=ts" target="_blank"><img src="facebook.png" alt="facebook logo"/></a>
+                        <a href="https://twitter.com/agriculteuraujo" target="_blank"><img src="twitter.png" alt="twitter logo"/></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
  Fabriqué en France avec du
   <i class="fa fa-heart" aria-hidden="true"></i>
   et beaucoup de
