@@ -43,10 +43,9 @@ footer {
 }
 
 .video {
-    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
 
 .about {
@@ -76,8 +75,6 @@ img#logoplay:hover {
           transform: scale(1.25);
 }
 
-.socials {}
-
 #logo-container {
     display: inline-block;
     float: none;
@@ -99,13 +96,15 @@ img#logoplay:hover {
   text-align: center;
 }
 
+
 .rating a {
-   float: right;
    color: #aaa;
    text-decoration: none;
-   font-size: 3em;
+   font-size: 1em;
    transition: color .4s;
+
 }
+
 .rating a:hover,
 .rating a:focus,
 .rating a:hover ~ a,
@@ -114,5 +113,13 @@ img#logoplay:hover {
    cursor: pointer;
 }
 
+
+.containerF {
+  position: right;
+  margin-right: -2000px;
 }
 
+.rating {
+
+    padding-left: 20%;
+}
