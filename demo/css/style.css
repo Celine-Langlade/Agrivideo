@@ -1,0 +1,53 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+footer {
+position: absolute;
+bottom: 0px;
+width: 100%;
+}
+
+.about {
+  width: 30%;
+  left: 20%;
+  top: 10%;
+
+}
+
+#logoplay {
+  size: 20px;
+}
+
+.socials {
+
+}
+
+#logo-container {
+
+display: inline-block;
+float: none;
+font-size: 1.5em;
+vertical-align: bottom;
+}
+
+.recherche {
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+
+
+}
