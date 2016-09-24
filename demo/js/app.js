@@ -12,7 +12,7 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
     });
 
     youtubeFactory.getVideosFromSearchByParams({
-        q: "agriculteur",
+        q: "agriculteur d'aujourd'hui",
         maxResults: "9",
         key: _apiKey,
     }).then(function(_data) {
@@ -26,6 +26,9 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
         $('#video5').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[4].id.videoId);
         $('#video6').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[5].id.videoId);
         $('#video7').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[6].id.videoId);
+        $('#video8').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[7].id.videoId);
+        $('#video9').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[8].id.videoId);
+        $('#video10').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[9].id.videoId);
     });
 
     youtubeFactory.getVideosFromSearchByParams({
