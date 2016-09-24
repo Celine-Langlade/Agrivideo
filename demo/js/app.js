@@ -12,7 +12,7 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
     });
 
     youtubeFactory.getVideosFromSearchByParams({
-        q: "agriculture",
+        q: "agriculteur",
         maxResults: "9",
         key: _apiKey,
     }).then(function(_data) {
