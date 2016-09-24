@@ -16,6 +16,11 @@
     font-size: inherit;
 }
 
+.social
+{
+  padding: 10px;
+}
+
 footer {
     bottom: 0px;
     width: 100%;
@@ -37,6 +42,15 @@ footer {
 #logoplay {
     size: 20px;
 }
+img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
 
 .socials {}
 
@@ -56,5 +70,3 @@ footer {
   text-align: center;
 
 }
-
-
