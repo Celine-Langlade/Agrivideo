@@ -7,17 +7,22 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
         channelId: "UCVkXCOYluJvD6OPjX9HXj-A",
         maxResults: "50",
         key: _apiKey,
-    }).then(function (_data) {
+    }).then(function(_data) {
         console.info("videos from channel by id", _data);
     });
 
     youtubeFactory.getVideosFromSearchByParams({
         q: "agriculture",
-        maxResults: "50",
+        maxResults: "9",
         key: _apiKey,
-    }).then(function (_data) {
+    }).then(function(_data) {
         $scope.videos = _data.data.items;
         console.info("videos from search by q", _data);
+        console.log(_data.data.items[0].snippet.channelTitle);
+        $('#video1').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[0].id.videoId);
+        $('#video2').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[1].id.videoId);
+        $('#video3').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[2].id.videoId);
+        $('#video4').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[3].id.videoId);
     });
 
     youtubeFactory.getVideosFromSearchByParams({
@@ -25,7 +30,7 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
         locationRadius: "1000m",
         maxResults: "50",
         key: _apiKey,
-    }).then(function (_data) {
+    }).then(function(_data) {
         console.info("videos from search by location", _data);
     });
 
@@ -33,21 +38,21 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
         playlistId: "PLNLa2lbKPczGCueOYxjrwYDuNTBtQveK0",
         maxResults: "50",
         key: _apiKey,
-    }).then(function (_data) {
+    }).then(function(_data) {
         console.info("videos from playlist by id", _data);
     });
 
     youtubeFactory.getVideoById({
         videoId: "rG-haoIhH9o",
         key: _apiKey,
-    }).then(function (_data) {
+    }).then(function(_data) {
         console.info("video by id", _data);
     });
 
     youtubeFactory.getChannelById({
         channelId: "UCVkXCOYluJvD6OPjX9HXj-A",
         key: _apiKey,
-    }).then(function (_data) {
+    }).then(function(_data) {
         console.info("channel by id", _data);
     });
 
