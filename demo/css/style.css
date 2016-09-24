@@ -48,7 +48,6 @@ footer {
 }
 
 .recherche {
-<<<<<<< HEAD
 
   position: absolute;
   left: 50%;
@@ -56,13 +55,6 @@ footer {
   color: white;
   text-align: center;
 
-=======
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
->>>>>>> origin/guillaume2
 }
 
 
