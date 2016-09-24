@@ -102,11 +102,10 @@
             <nav>
                 <div class="nav-wrapper">
                   <form>
-                    <div class="input-field orange"> 
+                    <div class="input-field orange">
                       <div class="ui-widget">
                           <label for="tags"><i class="material-icons">search</i></label>
                           <input id="tags">
-                          <i class="material-icons">close</i>
                       </div>
                   </form>
               </div>
@@ -141,11 +140,11 @@
             </div>
             <div class="row">
                 <div class="col l4 s6 offset-l3 socials">
-                    <a href="mailto:" target="_blank"><img src="gmail.png" alt="gmail logo"/>
+                    <a href="mailto:" target="_blank"><img class="social" src="mail.png" alt="mail logo"/>
                     </a>
-                    <a href="https://www.facebook.com/agriculteurdaujourdhui/?fref=ts" target="_blank"><img src="facebook.png" alt="facebook logo"/>
+                    <a href="https://www.facebook.com/agriculteurdaujourdhui/?fref=ts" target="_blank"><img class="social" src="facebook.png" alt="facebook logo"/>
                     </a>
-                    <a href="https://twitter.com/agriculteuraujo" target="_blank"><img src="twitter.png" alt="twitter logo"/>
+                    <a href="https://twitter.com/agriculteuraujo" target="_blank"><img class="social" src="twitter.png" alt="twitter logo"/>
                     </a>
 
                 </div>
@@ -172,7 +171,7 @@
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 
-<script>
+<script class"search">
 $( function() {
     var availableTags = [
     "ActionScript",
@@ -200,7 +199,8 @@ $( function() {
     ];
     $( "#tags" ).autocomplete({
       source: availableTags
+
   });
-} 
+}
 );
 </script>
