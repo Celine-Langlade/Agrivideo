@@ -24,13 +24,13 @@
                     <a href="#">ACCUEIL</a>
                 </li>
                 <li>
-                    <a href="#">VIDÉOS</a>
+                    <a href="#video">VIDÉOS</a>
                 </li>
                 <li>
-                    <a href="#">PARTENAIRES</a>
+                    <a href="#partenaire">PARTENAIRES</a>
                 </li>
                 <li>
-                    <a href="#">SOURCES</a>
+                    <a href="#source">SOURCES</a>
                 </li>
             </ul>
             <!-- Navbar mobile gestion menu burger -->
@@ -197,7 +197,7 @@
 <br/><br>
 <div class="container">
     <div ng-controller="controller">
-        <div class="video">
+        <div class="video" id="video">
             <iframe id="video1" src="" width="600" height="300"></iframe>
         </br></br>
         <iframe id="video2" src="" width="600" height="300"></iframe>
@@ -268,9 +268,9 @@
         <div class="section">
 
             <!--   Icon Section   -->
-            <div class="row">
+            <div class="row" id="partenaire">
                 <div class="col s12 m4">
-                    <div class="icon-block">
+                    <div class="icon-block" >
                         <h2 class="center light-green-text">
                             <i class="material-icons">school</i>
                         </h2>
@@ -306,7 +306,7 @@
 
 
     <!-- footer -->
-    <footer class="page-footer light-green">
+    <footer class="page-footer light-green" id="source">
         <div class="container">
             <div class="row">
                 <div class="col l4 s6 about">
@@ -353,34 +353,5 @@
             <script src="js/app.js"></script>
 
             <script src="../src/angular-youtube-api-factory.js"></script>
-
-            <script>
-            $(function() {
-                var availableTags = [
-                "Céréales",
-                "Oléagineux",
-                "Protéagineux",
-                "Pommes de Terre",
-                "Betteraves",
-                "Legumes",
-                "Fruits",
-                "Cultures Fouragères",
-                "Semis direct vigne",
-                "TCS",
-                "Marraichage",
-                "Agriculture Bio",
-                "Lait",
-                "Bovins",
-                "Porcins",
-                "production Avicole",
-                "Diversification",
-                "Circuit Courts",
-                "Reglementations",
-                "Technologies",
-                "Agroforesterie"
-                ];
-                $("#tags").autocomplete({source: availableTags});
-            });
-            </script>
         </body>
         </html>
