@@ -6,6 +6,20 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+txtCat= "agriculteur";
+
+$('#liste li').click (function(){
+  txtCat=null;
+  console.log(txtCat);
+  if ($(this).text() == "All") {
+    txtCat = "agriculteur";
+  }
+  else {
+    txtCat = $(this).text();
+    console.log($(this).text());
+  }
+});
+
 $(function() {
     var availableTags = [
     "Céréales",

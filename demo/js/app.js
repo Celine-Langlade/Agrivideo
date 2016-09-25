@@ -5,7 +5,9 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
 
 
     youtubeFactory.getVideosFromSearchByParams({
-        q: "agriculteur d'aujourd'hui",
+      /* deb modif steph*/
+        q: txtCat,
+      /* fin modif steph*/
         maxResults: "20",
         key: _apiKey,
     }).then(function(_data) {
