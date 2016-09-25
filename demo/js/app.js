@@ -53,11 +53,23 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
     });
 
     youtubeFactory.getChannelById({
-        channelId: "UCVkXCOYluJvD6OPjX9HXj-A",
+        channelId: "UCKpXbgTztfWrrNLx4w1EYKw",
         key: _apiKey,
     }).then(function(_data) {
         console.info("channel by id", _data);
+        $('#channelId').attr('src', 'https://www.youtube.com/UCKpXbgTztfWrrNLx4w1EYKw' + _data.data.items[0].id.channelId);
     });
-
-
 }]);
+
+
+
+
+$(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+
+
+$(document).ready(function(){
+    $('.carousel').carousel();
+  });

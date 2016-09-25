@@ -8,6 +8,7 @@
  * Made By MaterializeCSS.com
  */
 
+
 .icon-block {
     padding: 0 15px;
 }
@@ -36,6 +37,13 @@
 .titlecategorie{
   text-align: center;
 }
+
+.playlist
+{
+  align: center;
+
+}
+
 
 footer {
     bottom: 0px;
