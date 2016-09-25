@@ -3,17 +3,10 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
 
     var _apiKey = "AIzaSyDnLrYqj8CEcAubXdMlYmJ0ljV0hJsJ_8Q";
 
-    youtubeFactory.getVideosFromChannelById({
-        channelId: "UCVkXCOYluJvD6OPjX9HXj-A",
-        maxResults: "50",
-        key: _apiKey,
-    }).then(function(_data) {
-        console.info("videos from channel by id", _data);
-    });
 
     youtubeFactory.getVideosFromSearchByParams({
-        q: "agriculteur",
-        maxResults: "9",
+        q: "agriculteur d'aujourd'hui",
+        maxResults: "20",
         key: _apiKey,
     }).then(function(_data) {
         $scope.videos = _data.data.items;
@@ -26,50 +19,11 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
         $('#video5').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[4].id.videoId);
         $('#video6').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[5].id.videoId);
         $('#video7').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[6].id.videoId);
+        $('#video8').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[7].id.videoId);
+        $('#video9').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[8].id.videoId);
+        $('#video10').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[9].id.videoId);
+        $('#video11').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[10].id.videoId);
+        $('#video12').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[11].id.videoId);
     });
 
-    youtubeFactory.getVideosFromSearchByParams({
-        location: "37.42307,-122.08427",
-        locationRadius: "1000m",
-        maxResults: "50",
-        key: _apiKey,
-    }).then(function(_data) {
-        console.info("videos from search by location", _data);
-    });
-
-    youtubeFactory.getVideosFromPlaylistById({
-        playlistId: "PLNLa2lbKPczGCueOYxjrwYDuNTBtQveK0",
-        maxResults: "50",
-        key: _apiKey,
-    }).then(function(_data) {
-        console.info("videos from playlist by id", _data);
-    });
-
-    youtubeFactory.getVideoById({
-        videoId: "rG-haoIhH9o",
-        key: _apiKey,
-    }).then(function(_data) {
-        console.info("video by id", _data);
-    });
-
-    youtubeFactory.getChannelById({
-        channelId: "UCKpXbgTztfWrrNLx4w1EYKw",
-        key: _apiKey,
-    }).then(function(_data) {
-        console.info("channel by id", _data);
-        $('#channelId').attr('src', 'https://www.youtube.com/UCKpXbgTztfWrrNLx4w1EYKw' + _data.data.items[0].id.channelId);
-    });
 }]);
-
-
-
-
-$(document).ready(function(){
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-  $('.modal-trigger').leanModal();
-});
-
-
-$(document).ready(function(){
-    $('.carousel').carousel();
-  });
