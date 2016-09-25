@@ -12,6 +12,7 @@ app.controller('controller', ['$scope', 'youtubeFactory', function($scope, youtu
         key: _apiKey,
     }).then(function(_data) {
         $scope.videos = _data.data.items;
+        console.log(txtCat);
         console.info("videos from search by q", _data);
         console.log(_data.data.items[0].snippet.channelTitle);
         $('#video1').attr('src', 'https://www.youtube.com/embed/' + _data.data.items[0].id.videoId);
