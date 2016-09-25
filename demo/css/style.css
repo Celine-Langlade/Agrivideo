@@ -40,17 +40,13 @@ footer {
     width: 100%;
 }
 
+
 .video {
     margin: 1% 1% 6% 1%;
     display: flex;
     align-items: center;
 }
 
-.about {
-    width: 30%;
-    left: 20%;
-    top: 10%;
-}
 
 img.social{
   -webkit-transition: -webkit-transform .8s ease-in-out;
